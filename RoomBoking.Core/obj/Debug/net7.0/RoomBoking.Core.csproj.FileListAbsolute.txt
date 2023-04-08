@@ -1,0 +1,12 @@
+C:\GA\C# OOP\RoomBoking.Core.Tests\RoomBoking.Core\bin\Debug\net7.0\RoomBoking.Core.deps.json
+C:\GA\C# OOP\RoomBoking.Core.Tests\RoomBoking.Core\bin\Debug\net7.0\RoomBoking.Core.dll
+C:\GA\C# OOP\RoomBoking.Core.Tests\RoomBoking.Core\bin\Debug\net7.0\RoomBoking.Core.pdb
+C:\GA\C# OOP\RoomBoking.Core.Tests\RoomBoking.Core\obj\Debug\net7.0\RoomBoking.Core.csproj.AssemblyReference.cache
+C:\GA\C# OOP\RoomBoking.Core.Tests\RoomBoking.Core\obj\Debug\net7.0\RoomBoking.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\GA\C# OOP\RoomBoking.Core.Tests\RoomBoking.Core\obj\Debug\net7.0\RoomBoking.Core.AssemblyInfoInputs.cache
+C:\GA\C# OOP\RoomBoking.Core.Tests\RoomBoking.Core\obj\Debug\net7.0\RoomBoking.Core.AssemblyInfo.cs
+C:\GA\C# OOP\RoomBoking.Core.Tests\RoomBoking.Core\obj\Debug\net7.0\RoomBoking.Core.csproj.CoreCompileInputs.cache
+C:\GA\C# OOP\RoomBoking.Core.Tests\RoomBoking.Core\obj\Debug\net7.0\RoomBoking.Core.dll
+C:\GA\C# OOP\RoomBoking.Core.Tests\RoomBoking.Core\obj\Debug\net7.0\refint\RoomBoking.Core.dll
+C:\GA\C# OOP\RoomBoking.Core.Tests\RoomBoking.Core\obj\Debug\net7.0\RoomBoking.Core.pdb
+C:\GA\C# OOP\RoomBoking.Core.Tests\RoomBoking.Core\obj\Debug\net7.0\ref\RoomBoking.Core.dll
