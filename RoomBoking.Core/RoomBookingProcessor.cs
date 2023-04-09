@@ -1,5 +1,6 @@
 ﻿using RoomBokingTDD.Core.Domain.Entities;
 using RoomBokingTDD.Core.Models;
+using RoomBokingTDD.Core.Models.Enums;
 using RoomBokingTDD.Core.Services;
 
 namespace RoomBookingTDD.Core
@@ -30,8 +31,22 @@ namespace RoomBookingTDD.Core
             {
                 throw new ArgumentNullException(nameof(RoomBookingRequest));
             }
-            _roomBookingInterface.Save(CreateRoomBookingObject<RoomBooking>(request));
             var response = CreateRoomBookingObject<RoomBookingResult>(request);
+            var availableRooms=_roomBookingInterface.GetAvailableRooms(request.Date);
+            if (availableRooms.Any())
+            {
+                var availableRoom=availableRooms.First();
+                var roomBooking = CreateRoomBookingObject<RoomBooking>(request);
+                roomBooking.RoomBookingId = availableRoom.RoomId;
+                _roomBookingInterface.Save(roomBooking);
+                response.Flag = BookingResultFlag.Success;
+                response.RoomBookingId = roomBooking.Id;
+            }
+            else
+            {
+                response.Flag = BookingResultFlag.Failure;
+
+            }
             return response;
         }
     }

@@ -1,4 +1,5 @@
 ﻿using RoomBokingTDD.Core.Domain.Entities;
+using RoomBokingTDD.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace RoomBokingTDD.Core.Services
     public interface IRoomBookingInterface
     {
         void Save(RoomBooking roomBooking);
+        IEnumerable<Room> GetAvailableRooms(DateTime date);
     }
 }

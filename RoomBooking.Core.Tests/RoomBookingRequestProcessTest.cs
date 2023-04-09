@@ -1,6 +1,7 @@
 using Moq;
 using RoomBokingTDD.Core.Domain.Entities;
 using RoomBokingTDD.Core.Models;
+using RoomBokingTDD.Core.Models.Enums;
 using RoomBokingTDD.Core.Services;
 using RoomBookingTDD.Core;
 using Shouldly;
@@ -13,11 +14,12 @@ namespace RoomBookingTDD.Core.Tests
         private readonly RoomBookingProcessor _bookingProcessor;
         private readonly RoomBookingRequest _request;
         private readonly Mock<IRoomBookingInterface> _roomBookingServiceMock;
+        private readonly List<Room> _availableRooms;
 
         public RoomBookingRequestProcessTest()
         {
             //arrange
-            _request= new RoomBookingRequest()
+            _request = new RoomBookingRequest()
             {
                 Name = "testname",
                 Email = "test@email.com",
@@ -26,6 +28,7 @@ namespace RoomBookingTDD.Core.Tests
             _roomBookingServiceMock = new Mock<IRoomBookingInterface>();
 
             _bookingProcessor = new RoomBookingProcessor(_roomBookingServiceMock.Object);
+            _availableRooms = new List<Room>() { new Room() {RoomId=1} };
         }
 
         [Fact]
@@ -65,7 +68,9 @@ namespace RoomBookingTDD.Core.Tests
         {
             //arrrange
             RoomBooking savedBooking = null;
+
             // act
+            _roomBookingServiceMock.Setup(x => x.GetAvailableRooms(_request.Date)).Returns(_availableRooms);
             _roomBookingServiceMock.Setup(x => x.Save(It.IsAny<RoomBooking>())).Callback<RoomBooking>(booking =>
             {
                 savedBooking=booking;
@@ -78,6 +83,82 @@ namespace RoomBookingTDD.Core.Tests
             Assert.Equal(_request.Name, savedBooking.Name);
             Assert.Equal(_request.Email, savedBooking.Email);
             Assert.Equal(_request.Date, savedBooking.Date);
+            Assert.Equal(savedBooking.RoomBookingId, _availableRooms.First().RoomId);
+
+        }
+
+        [Fact]
+        public void ShouldNotBookRoomIfRoomUnavailable()
+        {
+            // arrange
+            _roomBookingServiceMock.Setup(x => x.GetAvailableRooms(_request.Date)).Returns(_availableRooms);
+
+            //act
+            _availableRooms.Clear();
+            _bookingProcessor.Book(_request);
+            
+            //assert
+            _roomBookingServiceMock.Verify(x=>x.Save(It.IsAny<RoomBooking>()), Times.Never());
+
+        }
+
+        [Theory]
+        [InlineData(BookingResultFlag.Success,true)]
+        [InlineData(BookingResultFlag.Failure,false)]
+        public void ShouldReturnSuccessOrFailureFlagInBookingResult(BookingResultFlag bookingResultFlag, bool isAvailable)
+        {
+             RoomBooking savedBooking = null;
+
+            // arrange
+            _roomBookingServiceMock.Setup(x => x.GetAvailableRooms(_request.Date)).Returns(_availableRooms);
+            _roomBookingServiceMock.Setup(x => x.Save(It.IsAny<RoomBooking>())).Callback<RoomBooking>(booking =>
+            {
+                savedBooking=booking;
+            });
+            //act
+            if(!isAvailable)
+            {
+                _availableRooms.Clear();
+            }
+            var response= _bookingProcessor.Book(_request);
+            //assert
+            Assert.Equal(response.Flag,bookingResultFlag);
+
+            
+        }
+
+        [Theory]
+        [InlineData(1, true)]
+        [InlineData(null, false)]
+        public void ShouldReturnRoomBookingIdInResults(int? roomBookingId, bool isAvailable)
+        {
+            //arrange
+            if (!isAvailable)
+            {
+                _availableRooms.Clear();
+            }
+            else
+            {
+                _roomBookingServiceMock.Setup(x => x.GetAvailableRooms(_request.Date)).Returns(_availableRooms);
+                _roomBookingServiceMock.Setup(x => x.Save(It.IsAny<RoomBooking>())).Callback<RoomBooking>(booking =>
+                {
+                    booking.Id = roomBookingId.Value;
+                });
+            }
+          
+            // act           
+
+            var results=_bookingProcessor.Book(_request);
+
+            //assert
+
+            Assert.Equal(roomBookingId,results.RoomBookingId);
+
+
         }
     }
+
+
+
+
 }

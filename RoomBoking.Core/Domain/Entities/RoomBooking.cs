@@ -9,5 +9,7 @@ namespace RoomBokingTDD.Core.Domain.Entities
 {
     public record RoomBooking:RoomBookingBase
     {
+        public int RoomBookingId { get; set; }
+        public int? Id { get; set; }
     }
 }
