@@ -11,6 +11,7 @@
           "Microsoft.NET.Test.Sdk": "17.3.2",
           "Moq": "4.18.4",
           "RoomBokingTDD.Core": "1.0.0",
+          "RoomBookingTDD.Domain": "1.0.0",
           "Shouldly": "4.1.0",
           "coverlet.collector": "3.1.2",
           "xunit": "2.4.2",
@@ -1193,8 +1194,16 @@
       },
       "xunit.runner.visualstudio/2.4.5": {},
       "RoomBokingTDD.Core/1.0.0": {
+        "dependencies": {
+          "RoomBookingTDD.Domain": "1.0.0"
+        },
         "runtime": {
           "RoomBokingTDD.Core.dll": {}
+        }
+      },
+      "RoomBookingTDD.Domain/1.0.0": {
+        "runtime": {
+          "RoomBookingTDD.Domain.dll": {}
         }
       }
     }
@@ -1927,6 +1936,11 @@
       "hashPath": "xunit.runner.visualstudio.2.4.5.nupkg.sha512"
     },
     "RoomBokingTDD.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RoomBookingTDD.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

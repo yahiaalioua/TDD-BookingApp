@@ -1,7 +1,7 @@
-﻿using RoomBokingTDD.Core.Domain.Entities;
-using RoomBokingTDD.Core.Models;
-using RoomBokingTDD.Core.Models.Enums;
-using RoomBokingTDD.Core.Services;
+﻿using RoomBokingTDD.Core.Services;
+using RoomBokingTDD.Domain.Entities;
+using RoomBokingTDD.Domain.Models;
+using RoomBokingTDD.Models.Enums;
 
 namespace RoomBookingTDD.Core
 {

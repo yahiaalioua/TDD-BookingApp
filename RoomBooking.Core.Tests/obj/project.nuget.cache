@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JeKPqG6LJdMvBRP4Z/tYAUPwu/31SnA0U3zv1gxlNxGf3rDFFGE918iiyXCsu4ifcN9cWaeWbCsuSkfFEAXUmQ==",
+  "dgSpecHash": "aJathCWtJohu5EnoCyEO1aoUSDDC9I4skKowNl/FN4WBmCtK+wPhoNGGuIERwVAamIqJlb9panvZOk/sirtTYA==",
   "success": true,
   "projectFilePath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBooking.Core.Tests\\RoomBooking.Core.Tests.csproj",
   "expectedPackageFiles": [

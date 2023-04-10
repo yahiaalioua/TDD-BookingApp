@@ -1,8 +1,8 @@
 using Moq;
-using RoomBokingTDD.Core.Domain.Entities;
-using RoomBokingTDD.Core.Models;
-using RoomBokingTDD.Core.Models.Enums;
 using RoomBokingTDD.Core.Services;
+using RoomBokingTDD.Domain.Entities;
+using RoomBokingTDD.Domain.Models;
+using RoomBokingTDD.Models.Enums;
 using RoomBookingTDD.Core;
 using Shouldly;
 using Xunit;

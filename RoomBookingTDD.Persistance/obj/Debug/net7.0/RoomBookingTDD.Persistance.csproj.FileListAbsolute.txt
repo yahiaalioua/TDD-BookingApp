@@ -1,0 +1,17 @@
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\bin\Debug\net7.0\RoomBookingTDD.Persistance.deps.json
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\bin\Debug\net7.0\RoomBookingTDD.Persistance.dll
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\bin\Debug\net7.0\RoomBookingTDD.Persistance.pdb
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\bin\Debug\net7.0\RoomBokingTDD.Core.dll
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\bin\Debug\net7.0\RoomBookingTDD.Domain.dll
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\bin\Debug\net7.0\RoomBokingTDD.Core.pdb
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\bin\Debug\net7.0\RoomBookingTDD.Domain.pdb
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\obj\Debug\net7.0\RoomBookingTDD.Persistance.csproj.AssemblyReference.cache
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\obj\Debug\net7.0\RoomBookingTDD.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\obj\Debug\net7.0\RoomBookingTDD.Persistance.AssemblyInfoInputs.cache
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\obj\Debug\net7.0\RoomBookingTDD.Persistance.AssemblyInfo.cs
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\obj\Debug\net7.0\RoomBookingTDD.Persistance.csproj.CoreCompileInputs.cache
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\obj\Debug\net7.0\RoomBookingTDD.Persistance.csproj.CopyComplete
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\obj\Debug\net7.0\RoomBookingTDD.Persistance.dll
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\obj\Debug\net7.0\refint\RoomBookingTDD.Persistance.dll
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\obj\Debug\net7.0\RoomBookingTDD.Persistance.pdb
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Persistance\obj\Debug\net7.0\ref\RoomBookingTDD.Persistance.dll

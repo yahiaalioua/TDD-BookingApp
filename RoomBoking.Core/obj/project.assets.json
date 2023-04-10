@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "RoomBookingTDD.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/RoomBookingTDD.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RoomBookingTDD.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RoomBookingTDD.Domain/1.0.0": {
+      "type": "project",
+      "path": "../RoomBookingTDD.Domain/RoomBookingTDD.Domain.csproj",
+      "msbuildProject": "../RoomBookingTDD.Domain/RoomBookingTDD.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "RoomBookingTDD.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\yahia alioua\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\RoomBookingTDD.Domain.csproj": {
+              "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\RoomBookingTDD.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

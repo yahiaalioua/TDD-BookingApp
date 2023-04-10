@@ -22,3 +22,6 @@ C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBoking.Core\obj\Debug\net7.0\RoomBoki
 C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBoking.Core\obj\Debug\net7.0\refint\RoomBokingTDD.Core.dll
 C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBoking.Core\obj\Debug\net7.0\RoomBokingTDD.Core.pdb
 C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBoking.Core\obj\Debug\net7.0\ref\RoomBokingTDD.Core.dll
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBoking.Core\bin\Debug\net7.0\RoomBookingTDD.Domain.dll
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBoking.Core\bin\Debug\net7.0\RoomBookingTDD.Domain.pdb
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBoking.Core\obj\Debug\net7.0\RoomBokingTDD.Core.csproj.CopyComplete

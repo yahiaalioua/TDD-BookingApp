@@ -2013,11 +2013,24 @@
       "RoomBokingTDD.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "RoomBookingTDD.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/RoomBokingTDD.Core.dll": {}
         },
         "runtime": {
           "bin/placeholder/RoomBokingTDD.Core.dll": {}
+        }
+      },
+      "RoomBookingTDD.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/RoomBookingTDD.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RoomBookingTDD.Domain.dll": {}
         }
       }
     }
@@ -6714,6 +6727,11 @@
       "type": "project",
       "path": "../RoomBoking.Core/RoomBokingTDD.Core.csproj",
       "msbuildProject": "../RoomBoking.Core/RoomBokingTDD.Core.csproj"
+    },
+    "RoomBookingTDD.Domain/1.0.0": {
+      "type": "project",
+      "path": "../RoomBookingTDD.Domain/RoomBookingTDD.Domain.csproj",
+      "msbuildProject": "../RoomBookingTDD.Domain/RoomBookingTDD.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6721,6 +6739,7 @@
       "Microsoft.NET.Test.Sdk >= 17.3.2",
       "Moq >= 4.18.4",
       "RoomBokingTDD.Core >= 1.0.0",
+      "RoomBookingTDD.Domain >= 1.0.0",
       "Shouldly >= 4.1.0",
       "coverlet.collector >= 3.1.2",
       "xunit >= 2.4.2",
@@ -6756,6 +6775,9 @@
           "projectReferences": {
             "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBoking.Core\\RoomBokingTDD.Core.csproj": {
               "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBoking.Core\\RoomBokingTDD.Core.csproj"
+            },
+            "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\RoomBookingTDD.Domain.csproj": {
+              "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\RoomBookingTDD.Domain.csproj"
             }
           }
         }

@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "RoomBokingTDD.Core/1.0.0": {
+        "dependencies": {
+          "RoomBookingTDD.Domain": "1.0.0"
+        },
         "runtime": {
           "RoomBokingTDD.Core.dll": {}
+        }
+      },
+      "RoomBookingTDD.Domain/1.0.0": {
+        "runtime": {
+          "RoomBookingTDD.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "RoomBokingTDD.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RoomBookingTDD.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

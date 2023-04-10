@@ -304,3 +304,5 @@ C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBooking.Core.Tests\obj\Debug\net7.0\R
 C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBooking.Core.Tests\obj\Debug\net7.0\refint\RoomBooking.Core.Tests.dll
 C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBooking.Core.Tests\obj\Debug\net7.0\RoomBooking.Core.Tests.genruntimeconfig.cache
 C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBooking.Core.Tests\obj\Debug\net7.0\ref\RoomBooking.Core.Tests.dll
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBooking.Core.Tests\bin\Debug\net7.0\RoomBookingTDD.Domain.dll
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBooking.Core.Tests\bin\Debug\net7.0\RoomBookingTDD.Domain.pdb

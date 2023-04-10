@@ -1,0 +1,12 @@
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Domain\bin\Debug\net7.0\RoomBookingTDD.Domain.deps.json
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Domain\bin\Debug\net7.0\RoomBookingTDD.Domain.dll
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Domain\bin\Debug\net7.0\RoomBookingTDD.Domain.pdb
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Domain\obj\Debug\net7.0\RoomBookingTDD.Domain.csproj.AssemblyReference.cache
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Domain\obj\Debug\net7.0\RoomBookingTDD.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Domain\obj\Debug\net7.0\RoomBookingTDD.Domain.AssemblyInfoInputs.cache
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Domain\obj\Debug\net7.0\RoomBookingTDD.Domain.AssemblyInfo.cs
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Domain\obj\Debug\net7.0\RoomBookingTDD.Domain.csproj.CoreCompileInputs.cache
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Domain\obj\Debug\net7.0\RoomBookingTDD.Domain.dll
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Domain\obj\Debug\net7.0\refint\RoomBookingTDD.Domain.dll
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Domain\obj\Debug\net7.0\RoomBookingTDD.Domain.pdb
+C:\GA\C# OOP\AccomodationBookingAppTDD\RoomBookingTDD.Domain\obj\Debug\net7.0\ref\RoomBookingTDD.Domain.dll

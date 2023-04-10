@@ -1,5 +1,4 @@
-﻿using RoomBokingTDD.Core.Domain.Entities;
-using RoomBokingTDD.Core.Models;
+﻿using RoomBokingTDD.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
