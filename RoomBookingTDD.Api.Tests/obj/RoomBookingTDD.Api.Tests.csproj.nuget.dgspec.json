@@ -1,0 +1,369 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Api.Tests\\RoomBookingTDD.Api.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBoking.Core\\RoomBokingTDD.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBoking.Core\\RoomBokingTDD.Core.csproj",
+        "projectName": "RoomBokingTDD.Core",
+        "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBoking.Core\\RoomBokingTDD.Core.csproj",
+        "packagesPath": "C:\\Users\\yahia alioua\\.nuget\\packages\\",
+        "outputPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBoking.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\yahia alioua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\RoomBookingTDD.Domain.csproj": {
+                "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\RoomBookingTDD.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Api.Tests\\RoomBookingTDD.Api.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Api.Tests\\RoomBookingTDD.Api.Tests.csproj",
+        "projectName": "RoomBookingTDD.Api.Tests",
+        "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Api.Tests\\RoomBookingTDD.Api.Tests.csproj",
+        "packagesPath": "C:\\Users\\yahia alioua\\.nuget\\packages\\",
+        "outputPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Api.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\yahia alioua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Api\\RoomBookingTDD.Api.csproj": {
+                "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Api\\RoomBookingTDD.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.2, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Api\\RoomBookingTDD.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Api\\RoomBookingTDD.Api.csproj",
+        "projectName": "RoomBookingTDD.Api",
+        "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Api\\RoomBookingTDD.Api.csproj",
+        "packagesPath": "C:\\Users\\yahia alioua\\.nuget\\packages\\",
+        "outputPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\yahia alioua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBoking.Core\\RoomBokingTDD.Core.csproj": {
+                "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBoking.Core\\RoomBokingTDD.Core.csproj"
+              },
+              "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\RoomBookingTDD.Domain.csproj": {
+                "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\RoomBookingTDD.Domain.csproj"
+              },
+              "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Persistance\\RoomBookingTDD.Persistance.csproj": {
+                "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Persistance\\RoomBookingTDD.Persistance.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\RoomBookingTDD.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\RoomBookingTDD.Domain.csproj",
+        "projectName": "RoomBookingTDD.Domain",
+        "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\RoomBookingTDD.Domain.csproj",
+        "packagesPath": "C:\\Users\\yahia alioua\\.nuget\\packages\\",
+        "outputPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\yahia alioua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Persistance\\RoomBookingTDD.Persistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Persistance\\RoomBookingTDD.Persistance.csproj",
+        "projectName": "RoomBookingTDD.Persistance",
+        "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Persistance\\RoomBookingTDD.Persistance.csproj",
+        "packagesPath": "C:\\Users\\yahia alioua\\.nuget\\packages\\",
+        "outputPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Persistance\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\yahia alioua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBoking.Core\\RoomBokingTDD.Core.csproj": {
+                "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBoking.Core\\RoomBokingTDD.Core.csproj"
+              },
+              "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\RoomBookingTDD.Domain.csproj": {
+                "projectPath": "C:\\GA\\C# OOP\\AccomodationBookingAppTDD\\RoomBookingTDD.Domain\\RoomBookingTDD.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

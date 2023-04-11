@@ -1,11 +1,12 @@
 ﻿using RoomBokingTDD.Core.Services;
+using RoomBokingTDD.Core.Services.Abstract;
 using RoomBokingTDD.Domain.Entities;
 using RoomBokingTDD.Domain.Models;
 using RoomBokingTDD.Models.Enums;
 
 namespace RoomBookingTDD.Core
 {
-    public class RoomBookingProcessor
+    public class RoomBookingProcessor : IRoomBookingProcessor
     {
         private readonly IRoomBookingInterface _roomBookingInterface;
 
@@ -14,7 +15,7 @@ namespace RoomBookingTDD.Core
             _roomBookingInterface = roomBookingInterface;
         }
         private TRoomBooking CreateRoomBookingObject<TRoomBooking>(RoomBookingRequest request) where TRoomBooking
-            : RoomBookingBase,new() 
+            : RoomBookingBase, new()
         {
             return new TRoomBooking()
             {
@@ -32,10 +33,10 @@ namespace RoomBookingTDD.Core
                 throw new ArgumentNullException(nameof(RoomBookingRequest));
             }
             var response = CreateRoomBookingObject<RoomBookingResult>(request);
-            var availableRooms=_roomBookingInterface.GetAvailableRooms(request.Date);
+            var availableRooms = _roomBookingInterface.GetAvailableRooms(request.Date);
             if (availableRooms.Any())
             {
-                var availableRoom=availableRooms.First();
+                var availableRoom = availableRooms.First();
                 var roomBooking = CreateRoomBookingObject<RoomBooking>(request);
                 roomBooking.RoomBookingId = availableRoom.RoomId;
                 _roomBookingInterface.Save(roomBooking);

@@ -19,22 +19,16 @@ namespace RoomBookingTDD.Persistance.Repositories
 
         public IEnumerable<Room> GetAvailableRooms(DateTime date)
         {
-            var allBookings=_context.RoomBookings.ToList();
-            var relevantBookingsToDate=allBookings.FindAll(r=>r.Date == date).ToList();
-            var allRooms=_context.Rooms.ToList();
-            var availableRooms=new List<Room>();
-            foreach(var r in relevantBookingsToDate)
-            {
-                var results=allRooms.FindAll(x => x.RoomId != r.Id);
-                availableRooms= results.ToList();
-            }
-            return availableRooms;
+            var response=_context.Rooms.Where(x=> !x.RoomBooking.Any(q=>q.Date == date)).ToList();
+           
+            return response;
             
         }
 
         public void Save(RoomBooking roomBooking)
         {
-            throw new NotImplementedException();
+            _context.RoomBookings.Add(roomBooking);
+            _context.SaveChanges();
         }
     }
 }

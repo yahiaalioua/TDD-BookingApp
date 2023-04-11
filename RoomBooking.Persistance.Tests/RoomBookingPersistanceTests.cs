@@ -11,7 +11,7 @@ namespace RoomBookingTDD.Persistance.Tests
         public void ShouldReturnAvailableRooms()
         {
             //arrange
-            var date = new DateTime(2023, 04, 10);
+            var date = new DateTime(2023, 04, 11);
 
             var options = new DbContextOptionsBuilder<RoomBookingDbContext>()
                 .UseInMemoryDatabase(nameof(ShouldReturnAvailableRooms)).Options;
@@ -36,6 +36,33 @@ namespace RoomBookingTDD.Persistance.Tests
             Assert.Equal(2,availableRooms.Count());
             Assert.Contains(availableRooms, r=>r.RoomId == 2);
             Assert.Contains(availableRooms, r => r.RoomId == 3);
+            Assert.DoesNotContain(availableRooms, r => r.RoomId == 1);
+
+        }
+
+        [Fact]
+        public void ShouldSaveRoomBookingToDb()
+        {
+            //arrange
+
+            var date = new DateTime(2023, 04, 11);
+            var options = new DbContextOptionsBuilder<RoomBookingDbContext>()
+                .UseInMemoryDatabase(nameof(ShouldSaveRoomBookingToDb)).Options;
+
+            var context = new RoomBookingDbContext(options);
+            var newBooking = new RoomBooking() { Id = 1, Date = date };
+
+            //act
+            var roomBookingService = new RoomBookingService(context);
+            roomBookingService.Save(newBooking);
+
+            var allBookings = context.RoomBookings.ToList();
+
+            //assert
+            var booking=Assert.Single(allBookings);
+
+            Assert.Equal(newBooking.Date, booking.Date);
+            Assert.Equal(newBooking.RoomBookingId, booking.RoomBookingId);
 
         }
     }

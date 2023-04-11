@@ -18,8 +18,8 @@ namespace RoomBookingTDD.Persistance
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Room>().HasOne(x => x.RoomBooking)
-                .WithOne(x => x.Room).HasForeignKey<RoomBooking>(x => x.RoomBookingId);
+            modelBuilder.Entity<Room>().HasMany(x => x.RoomBooking)
+                .WithOne(x => x.Room).HasForeignKey(r => r.Id);
             modelBuilder.Entity<Room>().HasData
                 (
                     new Room() { RoomId=1,Name="Conference room A"},

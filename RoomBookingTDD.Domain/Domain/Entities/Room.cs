@@ -4,6 +4,6 @@
     {
         public int RoomId { get; set; }
         public string Name { get; set; } = null!;
-        public virtual RoomBooking RoomBooking { get; set; }
+        public virtual List<RoomBooking> RoomBooking { get; set; }
     }
 }
